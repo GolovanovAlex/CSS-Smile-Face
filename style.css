@@ -47,3 +47,16 @@ body {
   box-shadow: 45px 0 0 #111;
   opacity: 0.5;
 }
+.smile-face__face::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 45px;
+  width: 40px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #111;
+  opacity: 0.5;
+  transition: 0.5s;
+}
