@@ -20,3 +20,30 @@ body {
   gap: 4px;
   min-height: 100vh;
 }
+.smile-face__label {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.smile-face__input {
+  appearance: none;
+}
+.smile-face__face {
+  position: absolute;
+  inset: 0;
+  background-color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.smile-face__face::before {
+  content: '';
+  position: absolute;
+  top: 60px;
+  left: 45px;
+  width: 15px;
+  height: 15px;
+  background-color: #111;
+  border-radius: 50%;
+  box-shadow: 45px 0 0 #111;
+  opacity: 0.5;
+}
