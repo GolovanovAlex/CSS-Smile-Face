@@ -60,3 +60,19 @@ body {
   opacity: 0.5;
   transition: 0.5s;
 }
+.smile-face__input:checked ~ .smile-face__face::after {
+  width: 40px;
+  height: 20px;
+  border-radius: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transform: translateX(-50%) translateY(10px);
+}
+.smile-face__input:checked ~ .smile-face__face {
+  background-color: var(--clr1);
+}
+.smile-face__label:nth-child(even)
+  .smile-face__input:checked
+  ~ .smile-face__face {
+  background-color: var(--clr2);
+}
